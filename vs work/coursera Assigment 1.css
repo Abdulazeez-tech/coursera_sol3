@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding: 30px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.header li {
+    font-size: 50px;
+}
+.topnav {
+   /* background-color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: antiquewhite;*/
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+.topnav a {
+    display: block;
+    color: aliceblue;
+    padding: 14px 16px;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+
+}
+
+.topnav a:hover {
+    background-color:black;
+    color: aqua;
+}
+
+/*to create two unequal column that float next to each other*/
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column*/
+
+.rightcolumn {
+    background-color: azure;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Fake imagee*/
+.fakeimg {
+    background-color: white;
+    padding: 20px;
+    width: 100px;
+    height: 200px;
+}
+.row {
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+.card {
+    background-color: darkgray;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear:both
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 30px;
+}
+
+
+@media screen  and (max-width:800px)
+{
+ .leftcolumn, .rightcolumn {
+    width: 100px;
+    padding: 0;
+ }   
+}
+
+@media screen  and (max-width:400px)
+{
+.topnav a {
+float: none;
+width: 100px;
+}
+}
